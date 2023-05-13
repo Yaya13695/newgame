@@ -21,18 +21,6 @@ basic.forever(function () {
     if (run == 1) {
         banana = game.createSprite(randint(0, 4), 0)
         banana.set(LedSpriteProperty.Brightness, 50)
-        for (let index = 0; index <= 4; index++) {
-            banana.set(LedSpriteProperty.Y, index)
-            basic.pause(time)
-        }
-        banana.delete()
-        time += -20
-    }
-})
-basic.forever(function () {
-    if (run == 1) {
-        banana = game.createSprite(randint(0, 4), 0)
-        banana.set(LedSpriteProperty.Brightness, 50)
         for (let index = 0; index <= 5; index++) {
             if (banana.isDeleted()) {
                 break;
